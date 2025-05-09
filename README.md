@@ -34,16 +34,7 @@
   - ООП подход
   - LocalStorage для сохранения настроек
   - Обработка событий
-
-## Структура проекта
-calculator/
-   ├── index.html
-   ├── style.css
-   ├── script.js
-   ├── icon/
-   │ ├── moon-stars.svg
-   │ └── sun.svg
-   └── README.md
+  - 
 **Автор**: [Denizer1305]  
 **Версия**: 1.0.0  
 **Дата**: Май 2025
