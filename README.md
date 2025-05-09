@@ -1,9 +1,6 @@
 # Calculator_JS
 # Калькулятор с переключением тем
 
-![Светлая тема](screenshots/light-theme.png)
-![Темная тема](screenshots/dark-theme.png)
-
 ## Описание
 Современный веб-калькулятор с поддержкой светлой и темной тем. Проект включает все основные математические операции, адаптивный дизайн и интуитивно понятный интерфейс.
 
@@ -40,13 +37,13 @@
 
 ## Структура проекта
 calculator/
-├── index.html
-├── style.css
-├── script.js
-├── icon/
-│ ├── moon-stars.svg
-│ └── sun.svg
-└── README.md
+   ├── index.html
+   ├── style.css
+   ├── script.js
+   ├── icon/
+   │ ├── moon-stars.svg
+   │ └── sun.svg
+   └── README.md
 **Автор**: [Denizer1305]  
 **Версия**: 1.0.0  
 **Дата**: Май 2025
