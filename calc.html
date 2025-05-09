@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(33, 32, 32);">
+    <div class="calculator">
+        
+        <button class="theme-toggle">
+            <img src="icon/sun.svg" alt="moon">
+        </button>
+
+        <input type="text" class="display" id="display" readonly>
+
+        <div class="buttons">
+            <button class="btn clear" onclick="handleButtonClick('AC')">AC</button>
+            <button class="btn" onclick="handleButtonClick('C')">C</button>
+            <button class="btn" onclick="handleButtonClick('%')">%</button>
+            <button class="btn operator" onclick="handleButtonClick('/')">/</button>
+            
+            <button class="btn" onclick="handleButtonClick('7')">7</button>
+            <button class="btn" onclick="handleButtonClick('8')">8</button>
+            <button class="btn" onclick="handleButtonClick('9')">9</button>
+            <button class="btn operator" onclick="handleButtonClick('*')">×</button>
+            
+            <button class="btn" onclick="handleButtonClick('4')">4</button>
+            <button class="btn" onclick="handleButtonClick('5')">5</button>
+            <button class="btn" onclick="handleButtonClick('6')">6</button>
+            <button class="btn operator" onclick="handleButtonClick('-')">-</button>
+            
+            <button class="btn" onclick="handleButtonClick('1')">1</button>
+            <button class="btn" onclick="handleButtonClick('2')">2</button>
+            <button class="btn" onclick="handleButtonClick('3')">3</button>
+            <button class="btn operator" onclick="handleButtonClick('+')">+</button>
+            
+            <button class="btn" onclick="handleButtonClick('0')" style="grid-column: span 2;">0</button>
+            <button class="btn" onclick="handleButtonClick('.')">.</button>
+            <button class="btn equal" onclick="handleButtonClick('=')">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

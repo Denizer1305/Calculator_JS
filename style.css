@@ -1,0 +1,132 @@
+:root {
+    --bg-color: #f5f7fa;          
+    --display-bg: #ffffff;       
+    --btn-bg: #e3e9f2;           
+    --btn-hover: #d4dbe6;        
+    --operator-bg:  #E3B505;      
+    --operator-hover: #be9906;   
+    --equal-bg: #809848;         
+    --equal-hover: #697b3d;      
+    --clear-bg: #ff7675; 
+    --clear-hover: #d16363;       
+    --text-color: #2d3436;       
+    --shadow-color: rgba(187, 200, 204, 0.418); 
+    --icon-filter: invert(20%);  
+}
+
+[data-theme="dark"] {
+    --bg-color: #2d3436;         
+    --display-bg: #3d4346;      
+    --btn-bg: #4d4d4d;           
+    --btn-hover: #5d5d5d;               
+    --text-color: #dfe6e9;       
+    --shadow-color: rgba(223,230,233,0.1);
+    --icon-filter: invert(90%);
+}
+
+.calculator {
+    width: 320px;
+    margin: 50px auto;
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px var(--shadow-color);
+    position: relative;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+}
+
+.theme-toggle img {
+    width: 100%;
+    height: 100%;
+    filter: var(--icon-filter);
+    transition: filter 0.3s ease;
+}
+
+.display {
+    width: 90%;
+    height: 70px;
+    margin-top: 35px;
+    padding: 15px;
+    font-size: 28px;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background: var(--display-bg);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--btn-bg);
+    color: var(--text-color);
+    transition: 
+        background 0.2s ease,
+        transform 0.1s ease,
+        filter 0.2s ease;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.btn:hover {
+    background: var(--btn-hover);
+    filter: brightness(1.1);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    background: var(--operator-bg);
+    color: white;
+}
+
+.operator:hover {
+    background: var(--operator-hover);
+}
+
+.equal {
+    background: var(--equal-bg);
+    color: white;
+}
+
+.equal:hover {
+    background: var(--equal-hover);
+}
+
+.clear {
+    background: var(--clear-bg);
+    color: white;
+}
+
+.clear:hover {
+    background: var(--clear-hover);
+}
+
+.btn[style*="grid-column: span 2"] {
+    grid-column: span 2;
+}
